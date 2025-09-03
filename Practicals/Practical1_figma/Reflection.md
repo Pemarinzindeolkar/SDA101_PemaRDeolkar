@@ -1,0 +1,7 @@
+For my first Figma practical, we were asked to design a simple website. I kept my design very simple and minimal since it was my first practical in class. I already had some pre-existing knowledge of Figma from doing graphic design during my high school years, but designing a website was a new experience for me.
+
+The main concepts I applied were layout design, creating three simple pages: a homepage, an “About Me” page, and a contact page. I also focused on background colors and color schemes, learning how to combine colors that complement each other. Additionally, I learned a new technique using the ellipse tool along with shadow and blur effects to create a topple effect in the background.
+
+The new skills I gained include using small effects such as shadow and blur to add an aesthetic, abstract feel to a website design.
+
+The main challenge I faced was synchronizing all the elements on the page. As I mentioned earlier, I learned how to blur ellipses to make them look like painted spots on the layout. However, it was difficult to arrange them in a way that looked good without making the page feel crowded. After carefully organizing the ellipses along with the text and layout, the design looked much better and more balanced.

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Student Profile</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      line-height: 1.6;
+    }
+
+    nav {
+      background-color: #9074cc;
+      position: sticky;
+      top: 0;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin: 0;
+    }
+
+    nav ul li a {
+      display: block;
+      padding: 15px 20px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover {
+      background-color: #7c40bc;
+    }
+
+    h1 {
+      color: #82d5fc;
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    h2 {
+      color: #444;
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    h2:hover {
+      color: #e357a0;
+    }
+
+    .about {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #b19acf;
+      color: #fbfbfb;
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    .profile-img {
+      display: block;
+      margin: 20px auto;
+      border-radius: 15px;
+      height: 400px;
+      width: 300px;
+      border: 3px double #2f44cc;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 10px 20px;
+    }
+
+    b {
+      color: #fdd5cf;
+    }
+
+    ul, ol {
+      margin: 15px 0 15px 40px;
+    }
+
+    .content-list li {
+      margin-bottom: 8px;
+      color: #7b5ce2;
+      font-weight: 500;
+    }
+
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#goals">Goals</a></li>
+      <li><a href="#profile">Profile</a></li>
+      <li><a href="#schedule">Schedule</a></li>
+      <li><a href="#study">Study Goals</a></li>
+    </ul>
+  </nav>
+
+  <h1>About Me</h1>
+  <div class="about" id="about">
+    I am <b>Pema Rinzin Deolkar</b> from Bumthang Dzongkhag, and I recently completed the Bhutan Baccalaureate programme 
+    at The Royal Academy, where I studied from 2019 to 2024. My journey there helped me grow across the five areas of 
+    development—cerebral, emotional, physical, social, and spiritual—while also deepening my passion for technology, 
+    engineering, and space exploration. Along the way, I taught myself programming languages, participated in robotics 
+    and mathematics competitions, and gained hands-on experience through school webcasts, research projects, and even 
+    an internship building a Panoptes unit. Beyond academics, I enjoy basketball, outdoor treks, and community service, 
+    all of which strengthened my teamwork, leadership, and communication skills. These experiences have shaped me into 
+    a curious, resilient, and motivated learner, and I am excited to continue exploring new opportunities to learn, 
+    grow, and contribute positively to my community and beyond.
+  </div>
+
+  <section id="goals">
+    <h2>My Academic Goals</h2>
+    <p><b>My academic goal for this semester is to not lose focus in academic activities.</b></p>
+    <p><i>And to definitely <b>PASS</b> the exams.</i></p>
+  </section>
+
+  <section id="profile">
+    <h2>Profile</h2>
+    <img src="prd.jpeg" alt="Profile Photo" class="profile-img">
+    <h2>Software Engineering</h2>
+    <img src="swe.jpg" alt="Software Engineering" class="responsive">
+  </section>
+
+  <section id="schedule">
+    <h2><i>Daily Class Schedule</i></h2>
+    <ol class="content-list">
+      <li>MON - DZG101, CSF101(BLOCK), NWC201(P)</li>
+      <li>TUE - MAT205, DZG101(BLOCK), CSF101(P)</li>
+      <li>WED - NWC201, SDA101(BLOCK), NWC201(P)</li>
+      <li>THU - DZG101(T), MAT205(BLOCK), SDA201(P)</li>
+      <li>FRI - MAT205, NWC01(BLOCK)</li>
+    </ol>
+
+    <h2>Assignments & Free Time</h2>
+    <ul class="content-list">
+      <li>Assignments
+        <ol>
+          <li>Dzongkha topic questions</li>
+          <li>Math flip class</li>
+          <li>SDA figma update</li>
+        </ol>
+      </li>
+      <li>Free time
+        <ol>
+          <li>Online course</li>
+          <li>Sports</li>
+          <li>Music</li>
+        </ol>
+      </li>
+    </ul>
+  </section>
+
+  <section id="study">
+    <h2><i>Study Goals</i></h2>
+    <ul class="content-list">
+      <li>Probability
+        <ol>
+          <li>Standard deviation</li>
+          <li>Dispersion</li>
+          <li>Scaling method</li>
+        </ol>
+      </li>
+      <li>Figma
+        <ol>
+          <li>Prototyping</li>
+          <li>Skeleton method</li>
+          <li>Explore new template</li>
+        </ol>
+      </li>
+    </ul>
+  </section>
+
+</body>
+</html>

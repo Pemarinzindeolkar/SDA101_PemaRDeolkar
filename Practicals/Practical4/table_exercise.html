@@ -1,0 +1,126 @@
+<!-- Create an HTML table to keep track of your grades throughout the semester. 
+ You should list all your modules, assignments, exams, and their respective scores. 
+ The table should include the following columns:
+Module
+Assignment/Exam Name
+Maximum Marks
+Marks Obtained
+Percentage
+Grade
+Example: Module: "SDA101" - Assignment 1: "Figma Design" - Max Marks: 10 - Marks Obtained: 7 - Percentage: 70% - Grade: B -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f9f9f9;
+            padding: 30px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: auto;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+            background: white;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #26a287;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #d1e7dd; 
+            cursor: pointer;
+        }
+
+        td {
+            color: #333;
+        }
+
+        caption {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #444;
+        }
+        caption:hover{
+            color: #d31082;
+        }
+    </style>
+</head>
+<body>
+    <table border="1">
+        <caption>Self Assessment</caption>
+        <thead>
+            <tr>
+                <th>Module</th>
+                <th>Assignment/Exam Name</th>
+                <th>Maximum Marks</th>
+                <th>Marks Obtained</th>
+                <th>Percentage</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>SDA101</td>
+                <td>Website group project</td>
+                <td>10</td>
+                <td>8.75</td>
+                <td>87.5</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>MAT205</td>
+                <td>Flipped Class</td>
+                <td>10</td>
+                <td>10</td>
+                <td>100</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>DZG101</td>
+                <td>Passage writing</td>
+                <td>10</td>
+                <td>7</td>
+                <td>70</td>
+                <td>B</td>
+            </tr>
+            <tr>
+                <td>CSF101</td>
+                <td>Practical exercises</td>
+                <td>20</td>
+                <td>16</td>
+                <td>80</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>NWC201</td>
+                <td>Networking practicals</td>
+                <td>10</td>
+                <td>7.75</td>
+                <td>77.5</td>
+                <td>B</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!-- Create an HTML form for hostel room maintenance requests and style it using CSS. 
+ Include information like name, room number, type of issue, description, urgency etc.
+Some suggestions while styling the form:
+Style the form to have a clean, modern look.
+Incorporate appropriate input types and placeholders
+Use an appropriate color scheme that's easy on the eyes.
+Style form inputs consistently, including on focus states.
+Make the submit button stand out. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Room Maintenance Form</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f7fa;
+      margin: 0;
+      padding: 40px;
+    }
+
+    form {
+      max-width: 600px;
+      margin: auto;
+      background: #ffffff;
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    h2 {
+      text-align: center;
+      color: #4a4e69;
+      margin-bottom: 20px;
+    }
+
+    h2:hover {
+      color: #695fd7;
+    }
+
+    label {
+      font-weight: bold;
+      color: #333;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="hostel"],
+    input[type="room"],
+    input[type="number"], 
+    input[type="tel"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+      box-sizing: border-box;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    input[type="checkbox"] {
+      margin-right: 8px;
+    }
+
+    input[type="radio"] {
+      margin-right: 8px;
+    }
+
+    p {
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 8px;
+    }
+
+    input[type="submit"] {
+      background-color: #786fdb;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      width: 100%;
+      transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #463ad0;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+  </style>
+</head>
+<body>
+  <form action="/maintenance-form" method="post">
+    <h2>Room Maintenance Form</h2>
+
+    <label for="fullname">Full Name:</label>
+    <input type="text" id="fullname" name="fullname" required> <br><br>
+    
+    <label for="id">Student ID:</label>
+    <input type="number" id="id" name="id" required> <br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder= "student_number.cst@rub.edu.bt"required><br><br>
+
+    <label for="tel">Phone Number :</label>
+    <input type="tel" id="tel" name="tel" placeholder="+975 " required><br><br>
+
+    <label for="hostel">Hostel Name:</label>
+    <input type="text" id="hostel" name="hostel" required><br><br>
+
+    <label for="room">Room Number:</label>
+    <input type="number" id="room" name="room" required><br><br>
+
+    <label for="floor">Floor Number:</label>
+    <input type="number" id="floor" name="floor" required><br>
+
+    <p>Maintenance Required:</p>
+    <input type="checkbox" id="electrical" name="electrical" value="electrical">
+    <label for="electrical">Electrical</label><br>
+
+    <input type="checkbox" id="Plumbing" name="Plumbing" value="Plumbing">
+    <label for="Plumbing">Plumbing</label><br>
+
+    <input type="checkbox" id="Furniture" name="Furniture" value="Furniture">
+    <label for="Furniture">Furniture</label><br>
+
+    <input type="checkbox" id="Infrastructure" name="Infrastructure" value="Infrastructure">
+    <label for="Infrastructure">Infrastructure</label><br>
+
+    <input type="checkbox" id="Cleaning" name="Cleaning" value="Cleaning">
+    <label for="Cleaning">Cleaning</label><br>
+
+    <input type="checkbox" id="otherCheck" name="other" value="other">
+    <label for="otherCheck">Other</label ><br>
+    <textarea id="other" name="other" placeholder="If not mentioned above, please specify here " rows="2" cols="50"></textarea> <br>
+    <p>Emergency Level:</p>
+    <input type="radio" id="immediately" name="level" value="immediately">
+    <label for="immediately">Emergency</label><br>
+    <input type="radio" id="urgent" name="level" value="urgent">
+    <label for="urgent">High</label><br>
+    <input type="radio" id="not urgent" name="level" value="not urgent">
+    <label for="not urgent">Medium</label><br>
+    <input type="radio" id="free" name="level" value="free">
+    <label for="free">Low</label><br><br>
+
+
+    <label for="feedback">Issue Description: </label>
+    <textarea id="feedback" name="feedback" placeholder="Please ellaborate on your issue and your situation here" rows="5" cols="50"></textarea required> <br><br>
+      
+    <input type="submit" value="Send Request">
+
+  </form>
+</body>
+</html>

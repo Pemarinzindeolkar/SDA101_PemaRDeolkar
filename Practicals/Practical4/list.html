@@ -1,0 +1,139 @@
+<!-- Create an HTML file with an ordered list of at least 5 college events. 
+ Each event should include the event name, time, and location as nested unordered list.
+
+Style the list using CSS to make it stand out:
+
+Use custom bullets or numbers instead of default ones
+Add hover effects that change the color of the text or background when the user hovers over an event.
+Include spacing and padding to ensure the list is easy to read. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>College Events</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+      padding: 30px;
+    }
+
+    h2 {
+      color: rgb(97, 62, 156);
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    h2:hover {
+      color: rgb(197, 84, 164);
+      transition: 0.3s ease;
+    }
+
+    ol {
+      counter-reset: list-counter;
+      list-style: none;
+      padding: 0;
+      margin: 0 auto;
+      max-width: 600px;
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 20px 30px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    ol > li {
+      counter-increment: list-counter;
+      margin: 20px 0 10px 0;
+      font-size: 22px;
+      font-weight: bold;
+      position: relative;
+      padding-left: 45px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    ol > li::before {
+      content: counter(list-counter) " ⟶ ";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: rgb(97, 62, 156);
+      font-weight: bold;
+    }
+
+    ol > li:hover {
+      color: rgb(197, 84, 164);
+      transform: translateX(5px);
+    }
+
+    ul {
+      list-style: none;
+      margin: 5px 0 15px 45px;
+      padding: 0;
+    }
+
+    ul li {
+      position: relative;
+      padding-left: 25px;
+      margin-bottom: 6px;
+      font-size: 16px;
+      color: rgb(42, 101, 159);
+      transition: 0.3s ease;
+    }
+
+    ul li::before {
+      content: "\2660"; /* ♠ */
+      position: absolute;
+      left: 0;
+      color: rgb(97, 62, 156);
+      font-size: 16px;
+    }
+
+    ul li:hover {
+      color: rgb(17, 169, 169);
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>College Events</h2>
+  <ol>
+    <li>Foundation Day
+      <ul>
+        <li>September 27th, 2025</li>
+        <li>Venue: Connovation Hall</li>
+      </ul>
+    </li>
+
+    <li>Semester Exam
+      <ul>
+        <li>September 12th, 2025</li>
+        <li>Venue: IT 04</li>
+      </ul>
+    </li>
+
+    <li>Fablab Hands-on Training
+      <ul>
+        <li>August 28th, 2025</li>
+        <li>Venue: FabLab</li>
+      </ul>
+    </li>
+
+    <li>Blessed Rainy Day
+      <ul>
+        <li>September 23rd, 2025</li>
+        <li>Venue: Architecture Block</li>
+      </ul>
+    </li>
+
+    <li>Dashain
+      <ul>
+        <li>October 2nd, 2025</li>
+        <li>Venue: Town</li>
+      </ul>
+    </li>
+  </ol>
+</body>
+</html>
