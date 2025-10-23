@@ -1,6 +1,3 @@
-Food website skeletion 
-https://www.figma.com/design/VQSjGQppRUfa1uv0euwWlZ/practical2?node-id=0-1
-
 Figma documentation 
 The main concepts I applied while working on the Figma wireframe were Auto Layout and Prototyping. Auto Layout helped me structure the design in a neat and consistent way, while Prototyping allowed me to link different pages together and create smooth navigation for the e-commerce flow.
 
