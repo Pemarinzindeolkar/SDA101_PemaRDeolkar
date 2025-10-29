@@ -1,9 +1,29 @@
-.navbar {
-  background: #fff;
-  padding: 0 1rem;
-  height: 104px;
-  display: flex;
-  align-items: left;
-  justify-content: space-between;
-  border-bottom: 1px solid var(--border-gray);
+/* Use Georgia for all headings */
+h1,h2,h3,h4,h5,h6 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  letter-spacing: -0.01em;
+}
+
+html { font-size: 16px; } 
+
+@media (min-width: 1024px) {
+  html { font-size: 17.5px; } 
+}
+
+@media (min-width: 1440px) {
+  html { font-size: 18.5px; } 
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 1.875rem; 
+}
+@media (min-width: 768px) { h2 { font-size: 2.25rem; } }   
+@media (min-width: 1024px) { h2 { font-size: 2.75rem; } }  
+
+p { line-height: 1.65; }
+
+@media (min-width: 1024px) {
+  .stat-circle { width: 5.25rem; height: 5.25rem; }
+  .stat-circle img { width: 2.5rem; height: 2.5rem; }
 }

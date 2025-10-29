@@ -1,49 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Consulting Services</title>
-<script src="https://cdn.tailwindcss.com"></script>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consulting Services</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
-  <style>
-    /* Use Georgia for all headings */
-    h1,h2,h3,h4,h5,h6 {
-      font-family: Georgia, "Times New Roman", Times, serif;
-      /* Slightly tighter letter spacing for display headings */
-      letter-spacing: -0.01em;
-    }
-
-    /* Improve legibility by scaling base font-size on larger screens */
-    html { font-size: 16px; } /* base for small screens */
-
-    /* Desktop: increase root font-size a bit so rem-based utilities feel larger */
-    @media (min-width: 1024px) {
-      html { font-size: 17.5px; } /* ~9% bigger on laptop/desktop */
-    }
-
-    @media (min-width: 1440px) {
-      html { font-size: 18.5px; } /* larger screens */
-    }
-
-    /* Optional: make h2 scale nicely if you want consistent heading sizes even without changing utility classes */
-    h2 {
-      font-weight: 700;
-      font-size: 1.875rem; /* ~30px on base 16 */
-    }
-    @media (min-width: 768px) { h2 { font-size: 2.25rem; } }   /* md */
-    @media (min-width: 1024px) { h2 { font-size: 2.75rem; } }  /* lg+ */
-
-    /* Slightly larger default paragraph line-height for readability */
-    p { line-height: 1.65; }
-
-    /* Make the circular stat icons a bit more prominent on wide screens */
-    @media (min-width: 1024px) {
-      .stat-circle { width: 5.25rem; height: 5.25rem; }
-      .stat-circle img { width: 2.5rem; height: 2.5rem; }
-    }
-  </style>
 <body class="font-sans text-gray-800 text-base md:text-lg lg:text-base ">
 <!-- Navbar -->
 <nav class="flex justify-between items-center p-4 bg-white shadow">
