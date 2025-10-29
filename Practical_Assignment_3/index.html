@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Consulting Services</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+  <style>
+    /* Use Georgia for all headings */
+    h1,h2,h3,h4,h5,h6 {
+      font-family: Georgia, "Times New Roman", Times, serif;
+      /* Slightly tighter letter spacing for display headings */
+      letter-spacing: -0.01em;
+    }
+
+    /* Improve legibility by scaling base font-size on larger screens */
+    html { font-size: 16px; } /* base for small screens */
+
+    /* Desktop: increase root font-size a bit so rem-based utilities feel larger */
+    @media (min-width: 1024px) {
+      html { font-size: 17.5px; } /* ~9% bigger on laptop/desktop */
+    }
+
+    @media (min-width: 1440px) {
+      html { font-size: 18.5px; } /* larger screens */
+    }
+
+    /* Optional: make h2 scale nicely if you want consistent heading sizes even without changing utility classes */
+    h2 {
+      font-weight: 700;
+      font-size: 1.875rem; /* ~30px on base 16 */
+    }
+    @media (min-width: 768px) { h2 { font-size: 2.25rem; } }   /* md */
+    @media (min-width: 1024px) { h2 { font-size: 2.75rem; } }  /* lg+ */
+
+    /* Slightly larger default paragraph line-height for readability */
+    p { line-height: 1.65; }
+
+    /* Make the circular stat icons a bit more prominent on wide screens */
+    @media (min-width: 1024px) {
+      .stat-circle { width: 5.25rem; height: 5.25rem; }
+      .stat-circle img { width: 2.5rem; height: 2.5rem; }
+    }
+  </style>
+<body class="font-sans text-gray-800 text-base md:text-lg lg:text-base ">
+<!-- Navbar -->
+<nav class="flex justify-between items-center p-4 bg-white shadow">
+  <!-- Left: Larger Search Bar -->
+  <input 
+    type="search" 
+    placeholder="Search" 
+    class="border border-gray-300 rounded px-4 py-2 text-base focus:outline-none w-48 sm:w-64"
+  >
+
+  <!-- Right: Larger Menu Icon -->
+  <button 
+    class="flex flex-col justify-between w-8 h-6 focus:outline-none hover:scale-105 transition-transform"
+    aria-label="Menu"
+  >
+    <span class="block w-full h-[3px] bg-gray-800 rounded"></span>
+    <span class="block w-full h-[3px] bg-gray-800 rounded"></span>
+    <span class="block w-full h-[3px] bg-gray-800 rounded"></span>
+  </button>
+</nav>
+
+<!-- Header Section -->
+<header class="flex flex-col md:flex-row bg-white">
+  <!-- Left: Image -->
+  <div class="md:w-1/2 w-full">
+    <img
+      src="images/building.jpg"
+      class="w-full h-80 md:h-full object-cover"
+      alt="Building"
+    />
+  </div>
+
+  <!-- Right: Text Content -->
+  <div class="md:w-1/2 w-full flex flex-col justify-center items-center text-center p-10">
+    
+    <!-- Social Media Icons (moved above heading) -->
+    <div class="flex justify-start items-center gap-6 mb-6">
+      <a href="#" aria-label="Facebook">
+        <img src="images/facebook.png" alt="Facebook" class="w-8 h-8 md:w-10 md:h-10 hover:opacity-80 transition">
+      </a>
+      <a href="#" aria-label="Twitter">
+        <img src="images/twitter.png" alt="Twitter" class="w-8 h-8 md:w-10 md:h-10 hover:opacity-80 transition">
+      </a>
+      <a href="#" aria-label="Instagram">
+        <img src="images/instagram.png" alt="Instagram" class="w-8 h-8 md:w-10 md:h-10 hover:opacity-80 transition">
+      </a>
+    </div>
+
+    <h2 class="text-4xl font-bold mb-6">Our management consulting services</h2>
+
+    <!-- Content Boxes -->
+    <div class="flex flex-col sm:flex-row justify-center gap-6 mb-6">
+      <!-- Box 1 -->
+      <div class="sm:w-1/2 bg-white rounded-xl shadow p-10 flex items-start justify-center text-center">
+        <p class="text-gray-600 leading-relaxed text-base md:text-lg">
+          We help organizations uncover hidden opportunities, optimize processes, and unlock their full potential. Our consulting approach combines deep analytical insight with real world practicality, helping your business grow with clarity and purpose.        </p>
+      </div>
+
+      <!-- Box 2 -->
+      <div class="sm:w-1/2 bg-white rounded-xl shadow p-10 flex items-start justify-center text-center">
+        <p class="text-gray-600 leading-relaxed text-base md:text-lg">
+          Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.
+        </p>
+      </div>
+    </div>
+
+    <!-- Read More Button -->
+    <a
+      href="#"
+      class="inline-block bg-blue-700 text-white px-6 py-2 rounded-md hover:bg-blue-800 transition text-sm md:text-base"
+    >
+      Read More
+    </a>
+  </div>
+</header>
+
+
+<!-- Quality Consulting -->
+<section class="bg-gray-100 py-20">
+  <div class="text-center max-w-3xl mx-auto">
+    <h2 class="text-3xl font-bold mb-6">Quality Consulting</h2>
+    <p class="text-gray-600 mb-6">
+      Our consultants bring years of experience across industries, offering tailored strategies that drive measurable growth. We believe in practical solutions built on data, collaboration, and a deep understanding of your organization’s goals.    </p>
+    <a href="#" class="bg-blue-700 text-white px-5 py-2 rounded hover:bg-blue-800">Read More</a>
+  </div>
+</section>
+<!-- what do we do -->
+<section class="bg-blue-700 text-white py-8">
+  <div class="max-w-6xl mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-6">What Do We Do?</h2>
+
+    <div class="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
+      <!-- Box 1 -->
+      <div class="bg-white text-black rounded p-6 shadow flex flex-col items-center justify-between h-full">
+        <div class="w-14 h-14 border-2 border-blue-700 rounded-full flex items-center justify-center mb-2">
+          <h3 class="text-xl font-bold">01</h3>
+        </div>
+        <p class="text-sm mt-1 font-bold">Call Service</p>
+        <a href="#" class="mt-2 text-sm text-blue-700 underline hover:text-blue-800 transition">
+          Learn More
+        </a>
+      </div>
+
+      <!-- Box 2 -->
+      <div class="bg-white text-black rounded p-6 shadow flex flex-col items-center justify-between h-full">
+        <div class="w-14 h-14 border-2 border-blue-700 rounded-full flex items-center justify-center mb-2">
+          <h3 class="text-xl font-bold">02</h3>
+        </div>
+        <p class="text-sm mt-1 font-bold">Your Strategy</p>
+        <a href="#" class="mt-2 text-sm text-blue-700 underline hover:text-blue-800 transition">
+          Learn More
+        </a>
+      </div>
+
+      <!-- Box 3 -->
+      <div class="bg-white text-black rounded p-6 shadow flex flex-col items-center justify-between h-full">
+        <div class="w-14 h-14 border-2 border-blue-700 rounded-full flex items-center justify-center mb-2">
+          <h3 class="text-xl font-bold">03</h3>
+        </div>
+        <p class="text-sm mt-1 font-bold">Team Building</p>
+        <a href="#" class="mt-2 text-sm text-blue-700 underline hover:text-blue-800 transition">
+          Learn More
+        </a>
+      </div>
+
+      <!-- Box 4 -->
+      <div class="bg-white text-black rounded p-6 shadow flex flex-col items-center justify-between h-full">
+        <div class="w-14 h-14 border-2 border-blue-700 rounded-full flex items-center justify-center mb-2">
+          <h3 class="text-xl font-bold">04</h3>
+        </div>
+        <p class="text-sm mt-1 font-bold">Premium Plan</p>
+        <a href="#" class="mt-2 text-sm text-blue-700 underline hover:text-blue-800 transition">
+          Learn More
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Consulting Services - 3 column layout -->
+<section class="py-16">
+  <div class="max-w-6xl mx-auto px-6">
+    <!-- Use column layout on md+, stacked on small screens -->
+    <div class="flex flex-col md:flex-row md:items-stretch gap-6">
+
+      <!-- Column 1: Consulting text -->
+      <div class="md:w-1/3 w-full flex flex-col justify-center">
+        <h2 class="text-2xl md:text-3xl font-semibold mb-4">Consulting Services</h2>
+        <p class="text-gray-600 text-sm md:text-base mb-6 leading-relaxed">
+          We partner with companies to design and implement strategies that bridge the gap between vision and execution. From operational alignment to leadership development, our work ensures every part of your organization moves toward lasting success.
+        </p>
+        <div>
+          <a href="#"
+            class="inline-block bg-blue-700 text-white px-6 py-2 rounded-md hover:bg-blue-800 text-sm md:text-base transition">
+            Read More
+          </a>
+        </div>
+      </div>
+
+      <!-- Column 2: Image -->
+      <div class="md:w-1/3 w-full">
+        <img
+          src="images/consultant.jpg"
+          alt="Consultant"
+          class="w-full h-64 md:h-full object-cover rounded shadow"
+        />
+      </div>
+
+      <!-- Column 3: Two stacked boxes (each 50% height on md+) -->
+      <div class="md:w-1/3 w-full flex flex-col h-auto md:h-50%">
+        <!-- Top box: black -->
+        <div class="flex-1 bg-black text-white rounded-t-md md:rounded-md p-6 flex flex-col justify-center">
+          <h3 class="text-lg md:text-2xl font-bold mb-4 text-center">#1</h3>
+          <p class="text-sm md:text-base text-gray-200 leading-relaxed">
+            Insight-driven consulting focused on identifying what truly matters. We help leaders make confident decisions by turning complex data into actionable strategies.          </p>
+        </div>
+
+        <!-- Bottom box: grey -->
+        <div class="flex-1 bg-gray-100 text-gray-900 rounded-b-md md:rounded-md p-6 flex flex-col justify-center mt-2 md:mt-4">
+          <h3 class="text-lg md:text-xl font-bold mb-4 text-center">#2</h3>
+          <p class="text-sm md:text-base leading-relaxed">
+            Building teams and systems that sustain growth. We provide guidance that empowers your people to perform efficiently and adapt to change with confidence.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Photo gallery section -->
+<section class="w-full flex flex-wrap">
+  <!-- Image 1 -->
+  <div class="w-full sm:w-1/2 md:w-1/4 ">
+    <img
+      src="images/photo.jpg"
+      alt="Photo 1"
+      class="w-full h-64 md:h-80 object-cover"
+    />
+  </div>
+
+  <!-- Image 2 -->
+  <div class="w-full sm:w-1/2 md:w-1/4">
+    <img
+      src="images/photo2.jpg"
+      alt="Photo 2"
+      class="w-full h-64 md:h-80 object-cover"
+    />
+  </div>
+
+  <!-- Image 3 -->
+  <div class="w-full sm:w-1/2 md:w-1/4">
+    <img
+      src="images/photo3.jpeg"
+      alt="Photo 3"
+      class="w-full h-64 md:h-80 object-cover"
+    />
+  </div>
+
+  <!-- Image 4 -->
+  <div class="w-full sm:w-1/2 md:w-1/4">
+    <img
+      src="images/photo4.jpg"
+      alt="Photo 4"
+      class="w-full h-64 md:h-80 object-cover"
+    />
+  </div>
+</section>
+<!-- Practical Plans -->
+<div class="max-w-4xl mx-auto px-6">
+  <!-- Title -->
+  <h2 class="text-3xl font-bold mb-4 text-center pt-10">Practical Plans</h2>
+  <p class="text-black mb-8 text-center">Our practical plans turn ideas into achievable actions. Each solution is grounded in evidence-based analysis and shaped by your company’s specific challenges and goals.
+  </p>
+
+<section class="bg-blue-700 text-white py-6">
+    <!-- Tabs -->
+    <div class="flex justify-center gap-4 mb-4">
+      <button class="bg-white text-blue-700 font-semibold px-4 py-2 rounded-t-md shadow">
+        Description
+      </button>
+      <button class="bg-blue-600 hover:bg-blue-500 text-white font-semibold px-4 py-2 rounded-t-md">
+        Shipping
+      </button>
+      <button class="bg-blue-600 hover:bg-blue-500 text-white font-semibold px-4 py-2 rounded-t-md">
+        Review
+      </button>
+      <button class="bg-blue-600 hover:bg-blue-500 text-white font-semibold px-4 py-2 rounded-t-md">
+        Question
+      </button>
+    </div>
+
+    <!-- Content Box (Description) -->
+    <div class="bg-blue-700 text-white p-7 rounded-b-md shadow mb-6 max-w-100%">
+
+      <!-- Description Section -->
+      <div class="mb-6">
+        <h3 class="text-lg md:text-xl font-semibold mb-2 border-b border-white pb-2 w-full">
+          Description
+        </h3>
+        <p class="mb-4 text-gray-200 leading-relaxed">
+          Sample description text. This content box is on top of the blue background and stands out clearly.
+        </p>
+      </div>
+    
+      <!-- Information Section -->
+      <div class="mb-4">
+        <h3 class="text-lg md:text-xl font-normal mb-2 border-b border-white pb-2 w-full">
+          Information
+        </h3>
+      </div>
+    
+      <!-- Brand Info Table -->
+      <div class="overflow-x-auto">
+        <table class="min-w-full text-left border-t border-white">
+          <tbody>
+            <tr class="border-b border-white">
+              <td class="py-2 font-normal">Brand</td>
+              <td>Jewelry Brand</td>
+            </tr>
+            <tr class="border-b border-white">
+              <td class="py-2 font-normal">Model</td>
+              <td>T006.428.11.038.01</td>
+            </tr>
+            <tr class="border-b border-white">
+              <td class="py-2 font-normal">Gender</td>
+              <td>Ladies</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    
+    </div>
+
+  </div>
+</section>
+
+<!-- Student Review -->
+<section class="bg-white py-16 text-center">
+  <p class="text-sm text-gray-500  mb-2">Testimonials</p>
+  <h2 class="text-3xl font-semibold mb-10">Student Review</h2>
+  <div class="max-w-3xl mx-auto space-y-6">
+
+    <!-- Review 1 -->
+    <div class="bg-gray-200 p-6 rounded shadow flex flex-col sm:flex-row items-center sm:items-start gap-4">
+      <img src="images/reviewer1.jpg" alt="Student 1" class="w-20 h-20 rounded-full object-cover flex-shrink-0">
+      <div class="text-left">
+        <h4 class="font-semibold mb-2">Emily</h4>
+        <p class="text-gray-600 text-sm sm:text-base">
+          “Working with this consulting team completely changed how I viewed business growth. They didn’t just give advice, they helped me understand every step and guided me through real implementation.”
+        </p>
+      </div>
+    </div>
+  
+    <!-- Review 2 -->
+    <div class="bg-gray-200 p-6 rounded shadow flex flex-col sm:flex-row items-center sm:items-start gap-4">
+      <img src="images/reviewer2.jpg" alt="Student 2" class="w-20 h-20 rounded-full object-cover flex-shrink-0">
+      <div class="text-left">
+        <h4 class="font-semibold mb-2">Jack</h4>
+        <p class="text-gray-600 text-sm sm:text-base">
+          “I was impressed by how attentive and insightful the consultants were. They listened carefully to my challenges and designed a strategy that actually worked for my business.”
+        </p>
+      </div>
+    </div>
+    <!-- Review 3 -->
+    <div class="bg-gray-200 p-6 rounded shadow flex flex-col sm:flex-row items-center sm:items-start gap-4">
+      <img src="images/reviewer3.jpeg" alt="Student 2" class="w-20 h-20 rounded-full object-cover flex-shrink-0">
+      <div class="text-left">
+        <h4 class="font-semibold mb-2">Eula</h4>
+        <p class="text-gray-600 text-sm sm:text-base">
+          “Their professionalism and clarity made the entire process smooth. I’ve seen measurable improvements in performance and teamwork within just a few months.”
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Stats -->
+<section class="bg-blue-700 text-white py-12">
+  <div class="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 text-center gap-8">
+
+    <!-- Specialists -->
+    <div class="flex flex-col items-center">
+      <div class="bg-white rounded-full w-20 h-20 flex items-center justify-center mb-3">
+        <img src="images/user.png" alt="Specialists Icon" class="w-10 h-10">
+      </div>
+      <h2 class="text-4xl font-bold">16</h2>
+      <p>Specialists</p>
+    </div>
+
+    <!-- Happy Clients -->
+    <div class="flex flex-col items-center">
+      <div class="bg-white rounded-full w-20 h-20 flex items-center justify-center mb-3">
+        <img src="images/users-avatar.png" alt="Happy Clients Icon" class="w-10 h-10">
+      </div>
+      <h2 class="text-4xl font-bold">1256</h2>
+      <p>Happy Clients</p>
+    </div>
+
+    <!-- Successful Cases -->
+    <div class="flex flex-col items-center">
+      <div class="bg-white rounded-full w-20 h-20 flex items-center justify-center mb-3">
+        <img src="images/suitcase.png" alt="Successful Cases Icon" class="w-10 h-10">
+      </div>
+      <h2 class="text-4xl font-bold">27</h2>
+      <p>Successful Cases</p>
+    </div>
+
+    <!-- Projects -->
+    <div class="flex flex-col items-center">
+      <div class="bg-white rounded-full w-20 h-20 flex items-center justify-center mb-3">
+        <img src="images/trophy.png" alt="Projects Icon" class="w-10 h-10">
+      </div>
+      <h2 class="text-4xl font-bold">14</h2>
+      <p>Projects</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-white py-16">
+  <div class="max-w-6xl mx-auto px-6">
+    <!-- Top: split layout -->
+    <div class="flex flex-col md:flex-row items-stretch gap-6">
+
+      <!-- Left: Image (1/2 on md+) -->
+      <div class="md:w-1/2 w-full h-full md:h-auto overflow-hidden rounded">
+        <img src="images/footer.jpeg" alt="Footer image" class="w-full h-full object-cover">
+      </div>
+
+      <!-- Right: Form (1/2 on md+) -->
+      <div class="md:w-1/2 w-full flex items-center">
+        <form class="w-full max-w-lg mx-auto space-y-4">
+          <h2 class="text-3xl font-semibold mb-4">Doing The Right Thing, At The Right Time</h2>
+          <p class="mt-8 text-gray-500 text-sm pb-6">We believe integrity and timing are the cornerstones of meaningful progress. Every decision we make, every client we work with, reflects our commitment to doing what’s right, not just what’s easy.</p>
+          <!-- Row: Name & Email side-by-side on md+, each md:w-1/4 (quarter of page) -->
+          <div class="flex flex-col md:flex-row md:space-x-4 space-y-4 md:space-y-0">
+            <div class="flex-1">
+              <label class="sr-only" for="name">Name</label>
+              <input
+                id="name"
+                type="text"
+                placeholder="Enter your name"
+                class="w-full border border-gray-300 rounded px-3 py-2"
+              />
+            </div>
+          
+            <div class="flex-1">
+              <label class="sr-only" for="email">Email</label>
+              <input
+                id="email"
+                type="email"
+                placeholder="Enter a valid email address"
+                class="w-full border border-gray-300 rounded px-3 py-2"
+              />
+            </div>
+          </div>
+
+          <!-- Address (full width under the two inputs) -->
+          <div>
+            <label class="sr-only" for="address">Address</label>
+            <input id="address" type="text" placeholder="Enter your address"
+                   class="w-full border border-gray-300 rounded px-3 py-2" />
+          </div>
+
+          <!-- Message -->
+          <div>
+            <label class="sr-only" for="message">Message</label>
+            <textarea id="message" rows="4" placeholder="Enter your message"
+                      class="w-full border border-gray-300 rounded px-3 py-2"></textarea>
+          </div>
+
+          <!-- Submit button (compact width) -->
+          <div>
+            <button type="submit"
+                    class="bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800 w-32 mb-2">
+              Submit
+            </button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom full-width dark footer bar -->
+  <div class="mt-0 bg-gray-800 text-gray-200 ">
+    <div class="max-w-lg mx-auto px-6 py-6 text-center">
+      <p class="text-sm md:text-base">
+        © 2025 Guiding organizations to grow with purpose and precision. Every strategy we design starts with understanding people.      </p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
