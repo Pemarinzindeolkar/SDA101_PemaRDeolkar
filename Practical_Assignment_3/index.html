@@ -85,11 +85,21 @@
 
 
 <!-- Quality Consulting -->
-<section class="bg-gray-100 py-20">
-  <div class="text-center max-w-3xl mx-auto">
+<!-- Option 1 — Safe Tailwind (recommended) -->
+<section class="relative bg-gray-200 py-20 overflow-hidden">
+  <!-- Blob (standard Tailwind sizes, z-0) -->
+  <div class="absolute inset-0 flex justify-center items-center pointer-events-none z-0">
+    <svg viewBox="0 0 800 600" class="w-96 h-72 opacity-95" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path fill="white"         d="M440,50 C580,20 720,120 780,240 C830,340 760,500 600,560 C440,620 220,580 120,440 C40,330 80,180 220,90 C320,30 380,40 440,50Z"/>
+    </svg>
+  </div>
+
+  <!-- Content (z-10 ensures above blob) -->
+  <div class="relative z-10 text-center max-w-3xl mx-auto px-6">
     <h2 class="text-3xl font-bold mb-6">Quality Consulting</h2>
     <p class="text-gray-600 mb-6">
-      Our consultants bring years of experience across industries, offering tailored strategies that drive measurable growth. We believe in practical solutions built on data, collaboration, and a deep understanding of your organization’s goals.    </p>
+      Our consultants bring years of experience across industries, offering tailored strategies that drive measurable growth. We believe in practical solutions built on data, collaboration, and a deep understanding of your organization’s goals.
+    </p>
     <a href="#" class="bg-blue-700 text-white px-5 py-2 rounded hover:bg-blue-800">Read More</a>
   </div>
 </section>
